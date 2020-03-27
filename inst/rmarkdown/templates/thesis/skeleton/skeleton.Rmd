@@ -8,7 +8,7 @@ advisor: 'Advisor F. Name'
 #altadvisor: 'Your Other Advisor'
 department: 'Track Brain'
 degree: 'Master of Science (M.Sc.)'
-title: 'Master\'s Thesis'
+title: "Master's Thesis"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
