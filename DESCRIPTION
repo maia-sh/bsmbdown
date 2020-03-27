@@ -1,14 +1,15 @@
-Package: thesisdown
-Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.3
+Package: bsmbdown
+Title: An R Markdown thesis template for the Berlin School of Mind and Brain using the bookdown package
+Version: 0.0.1
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
+    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
+    person("Salholz-Hillel", "Maia", email = "mash2015@gmail.com", role = "aut"))
 Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
+    the Berlin School of Mind and Brain, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
     and analyses as well.
-Maintainer: Chester Ismay <chester.ismay@gmail.com>
+Maintainer: Maia Salholz-Hillel <mash2015@gmail.com>
 Depends:
     R (>= 3.2.0),
     remotes,

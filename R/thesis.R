@@ -1,7 +1,7 @@
 #' Creates an R Markdown PDF Thesis document
 #'
 #' This is a function called in output in the YAML of the driver Rmd file
-#' to specify using the Reed College Senior Thesis LaTeX template and cls files.
+#' to specify using the Berlin School of Mind and Brain LaTeX template and cls files.
 #'
 #' @export
 #'
@@ -10,11 +10,11 @@
 #' @param ... Further arguments passed to or from other methods.
 #' @param highlight Syntax highlighting style. Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock". Pass NULL to prevent syntax highlighting.
 #'
-#' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
+#' @return A modified \code{pdf_document} based on the Berlin School of Mind and Brain Senior Thesis LaTeX
 #'   template
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_pdf
+#'  output: bsmbdown::thesis_pdf
 #' }
 thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 
@@ -49,7 +49,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 #' @return A gitbook webpage
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_gitbook
+#'  output: bsmbdown::thesis_gitbook
 #' }
 thesis_gitbook <- function(...){
 
@@ -79,10 +79,10 @@ thesis_gitbook <- function(...){
 #'
 #' @export
 #' @return A Word Document based on (hopefully soon, but not currently)
-#' the Reed Senior Thesis Word template
+#' the Berlin School of Mind and Brain Senior Thesis Word template
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_word
+#'  output: bsmbdown::thesis_word
 #' }
 thesis_word <- function(...){
 
@@ -107,7 +107,7 @@ thesis_word <- function(...){
 #' @return A ebook version of the thesis
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_epub
+#'  output: bsmbdown::thesis_epub
 #' }
 thesis_epub <- function(...){
 
