@@ -1,14 +1,20 @@
 ---
 author: 'Your R. Name'
+birthdate: 'YYYY-MM-DD'
+birthplace: 'City, Country'
+address: 'Street #, Zip Code, City'
+location: 'City'
 date: 'YYYY-MM-DD'
+title: 'Thesis Title'
 institution: 'Humboldt-Universität zu Berlin'
 division: 'Berlin School of Mind and Brain'
-advisor: 'Advisor F. Name'
+supervisor1: 'Primary Supervisor'
+supervisor2: 'Secondary Supervisor'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
 department: 'Track Brain'
 degree: 'Master of Science (M.Sc.)'
-title: "Master's Thesis"
+type: "Master's Thesis"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 

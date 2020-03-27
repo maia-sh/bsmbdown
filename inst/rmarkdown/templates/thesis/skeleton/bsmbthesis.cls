@@ -202,10 +202,10 @@
 \def\@division{\@latex@warning@no@line{No \noexpand\division given}}
 \def\department#1{\gdef \@department{#1}}
 \def\@department{\@latex@warning@no@line{No \noexpand\department given}}
-\def\thedivisionof#1{\gdef \@thedivisionof{#1}}
-\def\@thedivisionof{The Division of}
-\def\approvedforthe#1{\gdef \@approvedforthe{#1}}
-\def\@approvedforthe{Division}
+%def\thedivisionof#1{\gdef \@thedivisionof{#1}}
+%\def\@thedivisionof{The Division of}
+% \def\approvedforthe#1{\gdef \@approvedforthe{#1}}
+% \def\@approvedforthe{Division}
 \def\advisor#1{\gdef \@advisor{#1}}
 \def\@advisor{\@latex@warning@no@line{No \noexpand\advisor given}}
 \def\altadvisor#1{\gdef \@altadvisor{#1} \@altadvisortrue}
@@ -300,49 +300,68 @@
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
+    \includegraphics[width=0.35\textwidth]{bsmb.png}
     {\fontsize{12}{14}\selectfont \@title}
+    %{\Large{\bf $title$}} \vspace{0.5cm}
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    \@type \\
+    submitted in fulfillment of the requirements for the degree \\
+    \@degree \\
+    in the master’s program "Mind and Brain" \\
     \vfil
-    A Thesis \\
-    Presented to \\
-    \@thedivisionof \ \@division \\
-    \@institution
+    \@institution \\
+    \@division \\
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    Author \@author \\
+    Date of Birth \@birthdate \\
+    in \@birthplace \\
+    Address \@address \\
     \vfil
-    In Partial Fulfillment \\
-    of the Requirements for the Degree \\
-    \@degree
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \bigskip
-    \centerline{}
-    \bigskip
-    {\fontsize{12}{14}\selectfont \lineskip .75em
-    \begin{tabular}[t]{c}%
-      \@author
-    \end{tabular}\par}
-    \vskip 1.5em
-    {\fontsize{12}{14}\selectfont \@date \par}
+    1. Supervisor: \@supervisor1
+    2. Supervisor: \@supervisor2
   \end{center}\par
+  \@location, \@date\\
   \end{titlepage}
 
+  %   A Thesis \\
+  %   Presented to \\
+  %   \@thedivisionof \ \@division \\
+  %   \@institution
+  %   \vfil
+  %   \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+  %   \vfil
+  %   In Partial Fulfillment \\
+  %   of the Requirements for the Degree \\
+  %   \@degree
+  %   \vfil
+  %   \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+  %   \bigskip
+  %   \centerline{}
+  %   \bigskip
+  %   {\fontsize{12}{14}\selectfont \lineskip .75em
+  %   \begin{tabular}[t]{c}%
+  %     \@author
+  %   \end{tabular}\par}
+  %   \vskip 1.5em
+  %   {\fontsize{12}{14}\selectfont \@date \par}
+  % \end{center}\par
+  % \end{titlepage}
+
 %% Approved for the division page
-  \cleardoublepage
-  {\fontsize{12}{14}
-  \setbox0=\hbox{Approved for the \@approvedforthe}
-  \thispagestyle{empty}
-  \null\vfil		% just below center of page
-  \par\vskip 6cm	% below center, not center
-  \centerline{\copy0}	% approved
-  \centerline{(\@department)} %major
-  \vskip 1cm		%space to sign
-  \centerline{\makebox[\wd0][c]{\hrulefill}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
-  \centerline{\makebox[\wd0][c]{\@advisor}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
-  \par\vfil\null}
+%   \cleardoublepage
+%   {\fontsize{12}{14}
+%   \setbox0=\hbox{Approved for the \@approvedforthe}
+%   \thispagestyle{empty}
+%   \null\vfil		% just below center of page
+%   \par\vskip 6cm	% below center, not center
+%   \centerline{\copy0}	% approved
+%   \centerline{(\@department)} %major
+%   \vskip 1cm		%space to sign
+%   \centerline{\makebox[\wd0][c]{\hrulefill}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
+%   \centerline{\makebox[\wd0][c]{\@advisor}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
+%   \par\vfil\null}
   \cleardoublepage
   }
 }

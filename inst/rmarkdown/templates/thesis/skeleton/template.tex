@@ -74,20 +74,28 @@ $if(highlighting-macros)$
   $highlighting-macros$
 $endif$
 
+% title page --------------------------------------------------------------
+
 % To pass between YAML and LaTeX the dollar signs are added by CII
+
 \title{$title$}
 \author{$author$}
-% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\birthdate{$birthdate$}
+\birthplace{$birthplace$}
+\address{$address$}
 \date{$date$}
+\location{$location$}
 \division{$division$}
-\advisor{$advisor$}
+\supervisor1{$supervisor1$}
+\supervisor2{$supervisor2$}
 \institution{$institution$}
 \degree{$degree$}
-%If you have two advisors for some reason, you can use the following
+\type{$type$}
+% If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
-$if(altadvisor)$
-\altadvisor{$altadvisor$}
-$endif$
+% $if(altadvisor)$
+% \altadvisor{$altadvisor$}
+% $endif$
 % End of CII addition
 
 %%% Remember to use the correct department!
