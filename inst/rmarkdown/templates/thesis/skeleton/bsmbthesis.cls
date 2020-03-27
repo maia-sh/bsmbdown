@@ -312,13 +312,19 @@
     \@institution \\
     \@division \\
     \vfil
-    Author \@author \\
-    Date of Birth \@birthdate \\
-    in \@birthplace \\
-    Address \@address \\
+    Author \\
+    \@author \\
+    Date of Birth \\
+    \@birthdate \\
+    in \\
+    \@birthplace \\
+    Address
+    \@address \\
     \vfil
-    1. Supervisor: \@supervisor1
-    2. Supervisor: \@supervisor2
+    1. Supervisor:\\
+    \@supervisor1 \\
+    2. Supervisor: \\
+    \@supervisor2 \\
   \end{center}\par
   \@location, \@date\\
   \end{titlepage}
