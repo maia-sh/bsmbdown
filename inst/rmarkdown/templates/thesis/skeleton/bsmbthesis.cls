@@ -206,6 +206,20 @@
 %\def\@thedivisionof{The Division of}
 % \def\approvedforthe#1{\gdef \@approvedforthe{#1}}
 % \def\@approvedforthe{Division}
+\def\birthdate#1{\gdef \@birthdate{#1}}
+\def\@birthdate{\@latex@warning@no@line{No \noexpand\birthdate given}}
+\def\birthplace#1{\gdef \@birthplace{#1}}
+\def\@birthplace{\@latex@warning@no@line{No \noexpand\birthplace given}}
+\def\address#1{\gdef \@address{#1}}
+\def\@address{\@latex@warning@no@line{No \noexpand\address given}}
+\def\location#1{\gdef \@location{#1}}
+\def\@location{\@latex@warning@no@line{No \noexpand\location given}}
+\def\supervisorone#1{\gdef \@supervisorone{#1}}
+\def\@supervisorone{\@latex@warning@no@line{No \noexpand\supervisorone given}}
+\def\supervisortwo#1{\gdef \@supervisortwo{#1}}
+\def\@supervisortwo{\@latex@warning@no@line{No \noexpand\supervisortwo given}}
+\def\type#1{\gdef \@type{#1}}
+\def\@type{\@latex@warning@no@line{No \noexpand\type given}}
 \def\advisor#1{\gdef \@advisor{#1}}
 \def\@advisor{\@latex@warning@no@line{No \noexpand\advisor given}}
 \def\altadvisor#1{\gdef \@altadvisor{#1} \@altadvisortrue}
@@ -300,7 +314,7 @@
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
-    \includegraphics[width=0.35\textwidth]{bsmb.png}
+    \includegraphics[width=0.35\textwidth]{figure/bsmb.png}
     {\fontsize{12}{14}\selectfont \@title}
     %{\Large{\bf $title$}} \vspace{0.5cm}
     \vfil
@@ -312,19 +326,13 @@
     \@institution \\
     \@division \\
     \vfil
-    Author \\
-    \@author \\
-    Date of Birth \\
-    \@birthdate \\
-    in \\
-    \@birthplace \\
-    Address
-    \@address \\
+    Author \@author \\
+    Date of Birth \@birthdate \\
+    in \@birthplace \\
+    Address \@address \\
     \vfil
-    1. Supervisor:\\
-    \@supervisor1 \\
-    2. Supervisor: \\
-    \@supervisor2 \\
+    1. Supervisor: \@supervisorone \\
+    2. Supervisor: \@supervisortwo \\
   \end{center}\par
   \@location, \@date\\
   \end{titlepage}
