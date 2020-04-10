@@ -314,9 +314,11 @@
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
-    \includegraphics[width=0.35\textwidth]{figure/bsmb.png}
-    {\fontsize{12}{14}\selectfont \@title}
+    \includegraphics[width=0.45\textwidth]{figure/bsmb.png}
+    \vfil
+    %{\fontsize{12}{14}\selectfont \@title}
     %{\Large{\bf $title$}} \vspace{0.5cm}
+    {\LARGE\bf \@title}
     \vfil
     \@type \\
     submitted in fulfillment of the requirements for the degree \\
@@ -326,13 +328,13 @@
     \@institution \\
     \@division \\
     \vfil
-    Author \@author \\
-    Date of Birth \@birthdate \\
-    in \@birthplace \\
-    Address \@address \\
+    {\bf Author} \@author \\
+    {\bf Date of Birth} \@birthdate \\
+    {\bf in} \@birthplace \\
+    {\bf Address} \@address \\
     \vfil
-    1. Supervisor: \@supervisorone \\
-    2. Supervisor: \@supervisortwo \\
+    {\bf 1. Supervisor:} \@supervisorone \\
+    {\bf 2. Supervisor:} \@supervisortwo \\
   \end{center}\par
   \@location, \@date\\
   \end{titlepage}
