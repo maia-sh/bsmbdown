@@ -4,7 +4,7 @@
 % Redistribution permitted.
 %
 % 27 Jan 2004	Sam Noble	Removed tocbibind dependency.
-% 04 Dec 2001 	Sam Noble	Class file
+% 04 Dec 2001 Sam Noble	Class file
 % 03 Sep 1995	David Perkinson	Title Page
 % Acknowledgements Page, David Perkinson & Sam Noble
 % May 2005 Patrick Carlisle Table of contents chapter definition
